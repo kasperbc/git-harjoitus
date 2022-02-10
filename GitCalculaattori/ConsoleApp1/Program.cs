@@ -2,6 +2,14 @@
 {
     public static void Main(string[] args)
     {
-        Console.WriteLine("Calculaattori");
+        Console.WriteLine("Anna ensimmäinen numero:");
+        int numero1 = int.Parse(Console.ReadLine());
+
+        Console.WriteLine("Anna toinen numero:");
+        int numero2 = int.Parse(Console.ReadLine());
+
+        
+        int tulos = numero1 + numero2;
+        Console.WriteLine("Numeroiden summa on " + tulos);
     }
 }
