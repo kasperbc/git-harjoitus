@@ -9,7 +9,9 @@
         int numero2 = int.Parse(Console.ReadLine());
 
         
-        int tulos = numero1 + numero2;
-        Console.WriteLine("Numeroiden summa on " + tulos);
+        int summa = numero1 + numero2;
+        Console.WriteLine("Numeroiden summa on " + summa);
+        int erotus = numero1 - numero2;
+        Console.WriteLine("Numeroiden erotus on " + erotus);
     }
 }
