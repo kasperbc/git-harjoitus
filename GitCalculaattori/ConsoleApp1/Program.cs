@@ -15,8 +15,7 @@
 
             if (laskuToiminto.Equals("summa"))
             {
-                int summa = numero1 + numero2;
-                Console.WriteLine("Numeroiden summa on " + summa);
+                Console.WriteLine("Numeroiden summa on " + Summa(numero1, numero2));
                 break;
             }
             else if (laskuToiminto.Equals("erotus"))
@@ -30,5 +29,10 @@
                 Console.WriteLine("Väärä komento.");
             }
         }
+    }
+
+    public static int Summa(int n1, int n2)
+    {
+        return n1 + n2;
     }
 }
