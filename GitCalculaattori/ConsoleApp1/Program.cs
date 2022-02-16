@@ -10,7 +10,7 @@
 
         while(true)
         {
-            Console.WriteLine("Miten haluat laskea luvut? (summa, erotus)");
+            Console.WriteLine("Miten haluat laskea luvut? (summa, erotus, tulo, jako)");
             string laskuToiminto = Console.ReadLine();
 
             if (laskuToiminto.Equals("summa"))
@@ -20,8 +20,17 @@
             }
             else if (laskuToiminto.Equals("erotus"))
             {
-                int erotus = numero1 - numero2;
-                Console.WriteLine("Numeroiden erotus on " + erotus);
+                Console.WriteLine("Numeroiden erotus on " + Erotus(numero1, numero2));
+                break;
+            }
+            else if (laskuToiminto.Equals("tulo"))
+            {
+                Console.WriteLine("Numeroiden tulo on " + Tulo(numero1, numero2));
+                break;
+            }
+            else if (laskuToiminto.Equals("jako"))
+            {
+                Console.WriteLine("Numeroiden jako on " + Jako(numero1, numero2));
                 break;
             }
             else
@@ -34,5 +43,20 @@
     public static int Summa(int n1, int n2)
     {
         return n1 + n2;
+    }
+
+    public static int Erotus(int n1, int n2)
+    {
+        return n1 - n2;
+    }
+
+    public static int Tulo(int n1, int n2)
+    {
+        return n1 * n2;
+    }
+
+    public static float Jako(int n1, int n2)
+    {
+        return (float)n1 / n2;
     }
 }
